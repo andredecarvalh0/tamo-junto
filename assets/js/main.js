@@ -1,12 +1,15 @@
 /*==================== MENU SHOW Y HIDDEN ====================*/
+const btnMobile = document.getElementById('nav-toggle');
 
+function toggleMenu(event) {
+    if(event.type === 'touchstart') event.preventDefault();
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('show-menu');
+}
 
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
+btnMobile.addEventListener('click', toggleMenu);
+btnMobile.addEventListener('touchstart', toggleMenu);
 
-
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
 
 
 /*==================== REMOVE MENU MOBILE ====================*/
