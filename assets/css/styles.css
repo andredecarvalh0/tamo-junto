@@ -277,9 +277,10 @@ display: grid;
 }
 
 .home_img{
+  display: flex;
   width: 14rem;
   order: 2;
-  bottom: 0;
+  bottom: -101;
 }
 
 
