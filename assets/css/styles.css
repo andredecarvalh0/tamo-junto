@@ -3,7 +3,7 @@
 
 /*==================== VARIABLES CSS ====================*/
 :root {
-    --header-height: 5rem;
+    --header-height: 5.5rem;
 
     /*========== Colors ==========*/
     /* Change favorite color */
@@ -184,7 +184,8 @@ img {
 }
 
 .nav_logo{
-  max-width: 4rem;
+  max-width: 6rem;
+
 }
 
 .nav_logo:hover{
@@ -192,7 +193,8 @@ img {
 }
 
 .nav_toggle{
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  font-weight: var(--font-bold);
 }
 
 .nav_toggle:hover{
