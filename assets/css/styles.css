@@ -261,7 +261,7 @@ img {
 /*==================== HOME ====================*/
 .home{
   width: 100vw;
-height: 70vh;
+height: 100vh;
 background: rgb(102,102,153);
 background: linear-gradient(222deg, rgba(102,102,153,1) 0%, rgba(1,124,165,1) 32%, rgba(62,62,130,1) 66%, rgba(62,62,130,1) 100%);
 }
@@ -278,9 +278,9 @@ display: grid;
 
 .home_img{
   display: flex;
-  width: 14rem;
+  width: 12rem;
   order: 2;
-  bottom: -101;
+  bottom: 0;
 }
 
 
