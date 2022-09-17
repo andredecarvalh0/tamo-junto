@@ -1,5 +1,5 @@
 /*==================== GOOGLE FONTS ====================*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
 
 /*==================== VARIABLES CSS ====================*/
 :root {
@@ -25,7 +25,7 @@
     --nav-color: hsl(var(--hue-color), 37%, 99%);
 
     /*========== Font and typography ==========*/
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Barlow', sans-serif;
 
     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
     --big-font-size: 2rem;
@@ -39,6 +39,7 @@
     /*========== Font weight ==========*/
     --font-medium: 500;
     --font-semi-bold: 600;
+    --font-bold: 700;
 
     /*========== Margenes Bottom ==========*/
     /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
@@ -95,7 +96,12 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3, h4 {
+h1 {
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+}
+
+h2, h3, h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
@@ -255,10 +261,28 @@ img {
 /*==================== HOME ====================*/
 .home{
   width: 100vw;
-height: 100vh;
+height: 70vh;
 background: rgb(102,102,153);
 background: linear-gradient(222deg, rgba(102,102,153,1) 0%, rgba(1,124,165,1) 32%, rgba(62,62,130,1) 66%, rgba(62,62,130,1) 100%);
 }
+
+.home_container{
+  gap: 1rem;
+}
+
+.home_content{
+display: grid;
+  padding-top: 3.5rem;
+  align-items: center;
+}
+
+.home_img{
+  width: 14rem;
+  order: 2;
+  bottom: 0;
+}
+
+
 
 /*==================== BUTTONS ====================*/
 /* border: 1px solid rgba(255,103,47,.31);
