@@ -621,9 +621,10 @@ background: linear-gradient(222deg, rgba(102,102,153,1) 0%, rgba(1,124,165,1) 32
 .slider_description{
   margin-bottom: var(--mb-0-5);
 }
+
       /*==================== OWLCARROUSEL====================*/
       .dm-width {
-        width: 300px;
+        width: 280px;
         margin: 0 auto;
       }
 
@@ -640,7 +641,7 @@ background: linear-gradient(222deg, rgba(102,102,153,1) 0%, rgba(1,124,165,1) 32
       }
 
       .device {
-      position: absolute;
+        position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
@@ -648,9 +649,8 @@ background: linear-gradient(222deg, rgba(102,102,153,1) 0%, rgba(1,124,165,1) 32
         width: 100%;
         height: 100%;
         -webkit-background-size: 100% 100%;
-        
         background-repeat: no-repeat;
-        background-image: url(../img/apple-iphone.webp);
+        background-image: url(../img/iphone.webp);
         background-size: cover;
         background-position: center center;
       }
@@ -658,16 +658,17 @@ background: linear-gradient(222deg, rgba(102,102,153,1) 0%, rgba(1,124,165,1) 32
       .screen {
         overflow: hidden;
         position: absolute;
-        top: 18.1%;
-        bottom: 20.6%;
-        left: 12.49%;
-        right: 17.4%;
+        top: 14.1%;
+        bottom: 15.2%;
+        left: 11%;
+        right: 16.4%;
         background-color: #E91E63;
       }
 
       .slider {
       height: 100%;
       }
+
       .slider div {
       height: 100%;
       }
@@ -681,6 +682,7 @@ background: linear-gradient(222deg, rgba(102,102,153,1) 0%, rgba(1,124,165,1) 32
       }
 
       .slider__item--1 {
+        
         background-color: #E91E63;
       }
       .slider__item--2 {
