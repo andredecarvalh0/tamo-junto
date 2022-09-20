@@ -22,16 +22,61 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 
 
 /*==================== SERVICES MODAL ====================*/
+const modalViews = document.querySelectorAll('.services_modal'),
+      modalBtns = document.querySelectorAll('.services_button'),
+      modalCloses = document.querySelectorAll('.services_modal-close');
 
+let modal = function(modalClick){
+    modalViews[modalClick].classList.add('active-modal')
+}
 
-/*==================== PORTFOLIO SWIPER  ====================*/
+modalBtns.forEach((modalBtn, i) =>{
+    modalBtn.addEventListener('click', () =>{
+    modal(i)
+    })
+})
 
+modalCloses.forEach((modalClose) =>{
+    modalClose.addEventListener('click', () =>{
+        modalViews.forEach((modalView) =>{
+            modalView.classList.remove('active-modal')
+        })
+    })
+})
+
+/*==================== SWIPER  ====================*/
+$('.slider').owlCarousel({
+    items: 1,
+    singleItem:true,
+    nav: true,
+    dots: true,
+    loop: true,
+    autoPlay: 2000
+    
+});
 
 /*==================== TESTIMONIAL ====================*/
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+const sections = document.querySelectorAll('section[id]')
 
+function scrollActive(){
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.add('active-link')
+        }else{
+            document.querySelector('.nav_menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
 
@@ -39,4 +84,4 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 /*==================== SHOW SCROLL UP ====================*/ 
 
 
-/*==================== DARK LIGHT THEME ====================*/ 
+/*==================== DARK LIGHT THEME ====================*/
