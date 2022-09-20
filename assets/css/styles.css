@@ -650,7 +650,7 @@ background: linear-gradient(222deg, rgba(102,102,153,1) 0%, rgba(1,124,165,1) 32
         -webkit-background-size: 100% 100%;
         
         background-repeat: no-repeat;
-        background-image: url(/assets/img/apple-iphone.webp);
+        background-image: url(../img/apple-iphone.webp);
         background-size: cover;
         background-position: center center;
       }
@@ -699,7 +699,7 @@ background: linear-gradient(222deg, rgba(102,102,153,1) 0%, rgba(1,124,165,1) 32
   width: 100vw;
   height: 300px;
   left: 0;
-  background: url(/assets/img/background-modificar.webp);
+  background: url(../img/background-modificar.webp);
   background-size: cover;
   background-position: 50% 0;
   z-index: -1;
